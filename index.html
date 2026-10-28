@@ -148,3 +148,33 @@ let styles=["Painting","Sculpture","Photography","Modern Art","Surrealism","Cont
 for(let i=0;i<styles.length;i++){
 document.getElementById("style-list").innerHTML+='<div class="style-item">'+styles[i]+'</div>';
 }
+let artists=[
+{name:"Vincent van Gogh",age:"1853 – 1890 (37 years)",specialist:"Post-Impressionist Painter",city:"Zundert, Netherlands",email:"vangogh@palette.com",bio:"Dutch painter known for his expressive brushwork, vibrant colors, and emotional depth.",image:"img/vincent_van_gogh.png",category:"Painting"},
+{name:"Frida Kahlo",age:"1907 – 1954 (47 years)",specialist:"Surrealist Painter",city:"Coyoacán, Mexico",email:"frida@palette.com",bio:"Mexican painter known for her self-portraits, exploring identity, pain, and cultural heritage.",image:"img/frida_kahlo.png",category:"Surrealism"},
+{name:"Leonardo da Vinci",age:"1452 – 1519 (67 years)",specialist:"Renaissance Artist",city:"Vinci, Italy",email:"leonardo@palette.com",bio:"Italian painter and inventor, known for masterpieces like the Mona Lisa and The Last Supper.",image:"img/leonardo_da_vinci.png",category:"Painting"},
+{name:"Pablo Picasso",age:"1881 – 1973 (91 years)",specialist:"Cubist Artist",city:"Málaga, Spain",email:"picasso@palette.com",bio:"Spanish artist who co-founded Cubism and redefined modern art with bold experimentation.",image:"img/pablo_picasso.png",category:"Modern Art"},
+{name:"Claude Monet",age:"1840 – 1926 (86 years)",specialist:"Impressionist Painter",city:"Paris, France",email:"monet@palette.com",bio:"French painter and a founder of Impressionism, famous for his landscapes and light-filled works.",image:"img/claude_monet.png",category:"Painting"},
+{name:"Georgia O'Keeffe",age:"1887 – 1986 (98 years)",specialist:"Modernist Painter",city:"Sun Prairie, United States",email:"okeeffe@palette.com",bio:"American painter known for her large-scale flowers, landscapes, and organic forms.",image:"img/georgia_okeeffe.png",category:"Modern Art"},
+{name:"Salvador Dalí",age:"1904 – 1989 (84 years)",specialist:"Surrealist Painter",city:"Figueres, Spain",email:"dali@palette.com",bio:"Spanish surrealist known for his dreamlike imagery and eccentric personality.",image:"img/salvador_dali.png",category:"Surrealism"},
+{name:"Yayoi Kusama",age:"1929 – Present",specialist:"Contemporary Artist",city:"Matsumoto, Japan",email:"kusama@palette.com",bio:"Japanese artist known for her immersive installations, polka dots, and exploration of infinity.",image:"img/andy_warhol.png",category:"Modern Art"},
+{name:"Rembrandt",age:"1606 – 1669 (63 years)",specialist:"Baroque Painter",city:"Leiden, Netherlands",email:"rembrandt@palette.com",bio:"Dutch master known for his dramatic use of light and shadow, and deep emotional portraits.",image:"img/rembrandt.png",category:"Painting"},
+{name:"Johannes Vermeer",age:"1632 – 1675 (43 years)",specialist:"Baroque Painter",city:"Delft, Netherlands",email:"vermeer@palette.com",bio:"Dutch painter famous for his intimate scenes, realistic details, and masterful use of light.",image:"img/johannes_vermeer.png",category:"Painting"},
+{name:"Henri Matisse",age:"1869 – 1954 (84 years)",specialist:"Modernist Painter",city:"Le Cateau-Cambrésis, France",email:"matisse@palette.com",bio:"French artist known for his bold use of color, simple forms, and expressive compositions.",image:"img/henri_matisse.png",category:"Modern Art"},
+{name:"Andy Warhol",age:"1928 – 1987 (58 years)",specialist:"Pop Art Artist",city:"Pittsburgh, United States",email:"warhol@palette.com",bio:"American artist and leading figure in Pop Art, known for iconic images and exploration of consumer culture.",image:"img/andy_warhol.png",category:"Modern Art"},
+{name:"Edvard Munch",age:"1863 – 1944 (80 years)",specialist:"Expressionist Painter",city:"Ådalsbruk, Norway",email:"munch@palette.com",bio:"Norwegian painter known for his emotional works, including The Scream.",image:"img/edvard_munch.png",category:"Painting"},
+{name:"Gustav Klimt",age:"1862 – 1918 (55 years)",specialist:"Symbolist Painter",city:"Baumgarten, Austria",email:"klimt@palette.com",bio:"Austrian painter known for his decorative style, rich patterns, and use of gold leaf.",image:"img/gustav_klimt.png",category:"Painting"},
+{name:"Pierre-Auguste Renoir",age:"1841 – 1919 (78 years)",specialist:"Impressionist Painter",city:"Limoges, France",email:"renoir@palette.com",bio:"French painter known for his lively scenes, warm colors, and celebration of everyday life.",image:"img/pierre_auguste_renoir.png",category:"Painting"},
+{name:"Michelangelo",age:"1475 – 1564 (88 years)",specialist:"Sculptor & Painter",city:"Caprese, Italy",email:"michelangelo@palette.com",bio:"Italian sculptor, painter, and architect, renowned for the statue of David and the Sistine Chapel.",image:"img/michelangelo.png",category:"Sculpture"}
+];
+for(let i=0;i<artists.length;i++){
+document.getElementById("artist-list").innerHTML+='<li class="artist-card"><img src="'+artists[i].image+'" alt="'+artists[i].name+'"><div class="artist-info"><h3>'+artists[i].name+'</h3><p><b>Age:</b> '+artists[i].age+'</p><p><b>Specialist:</b> '+artists[i].specialist+'</p><p><b>City:</b> '+artists[i].city+'</p><p><b>Email:</b> '+artists[i].email+'</p><p class="bio">'+artists[i].bio+'</p><button class="details-btn">View Details →</button></div></li>';
+}
+document.getElementById("close-modal").addEventListener("click",function(){
+document.getElementById("artist-modal").style.display="none";
+});
+document.getElementById("newsletter-btn").addEventListener("click",function(){
+document.getElementById("newsletter-message").innerHTML="Thank you for your interest!";
+});
+</script>
+</body>
+</html>
