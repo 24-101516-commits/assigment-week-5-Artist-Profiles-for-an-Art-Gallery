@@ -487,3 +487,32 @@ background:#91402e;
 margin-top:10px;
 font-size:12px;
 }
+.modal{
+position:fixed;
+inset:0;
+background:rgba(0,0,0,0.7);
+z-index:100;
+display:none;
+align-items:center;
+justify-content:center;
+padding:20px;
+}
+.modal-box{
+background:#f7f1e9;
+width:700px;
+max-width:100%;
+display:flex;
+position:relative;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 20px 70px rgba(0,0,0,0.3);
+}
+.modal-box>img{
+width:43%;
+min-height:340px;
+object-fit:cover;
+}
+.modal-content{
+width:57%;
+padding:45px 30px 30px;
+}
