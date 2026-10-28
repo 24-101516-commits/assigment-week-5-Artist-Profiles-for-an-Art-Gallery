@@ -64,3 +64,87 @@
 </div>
 </section>
 </main>
+<footer class="footer" id="contact">
+<div class="footer-brand">
+<h2 id="footer-logo"></h2>
+<p id="footer-sub"></p>
+<p id="footer-desc"></p>
+</div>
+<div class="footer-links">
+<h3 id="footer-links-title"></h3>
+<ul>
+<li><a href="#home" id="footer-home"></a></li>
+<li><a href="#about" id="footer-about"></a></li>
+<li><a href="#artists" id="footer-artists"></a></li>
+<li><a href="#contact" id="footer-contact"></a></li>
+</ul>
+</div>
+<div class="footer-contact">
+<h3 id="footer-contact-title"></h3>
+<p id="footer-email"></p>
+<p id="footer-phone"></p>
+<p id="footer-city"></p>
+</div>
+<div class="footer-newsletter">
+<h3 id="newsletter-title"></h3>
+<p id="newsletter-desc"></p>
+<div class="newsletter-form">
+<input type="email" id="newsletter-email" placeholder="Your email address">
+<button id="newsletter-btn"></button>
+</div>
+<p id="newsletter-message"></p>
+</div>
+</footer>
+<div class="modal" id="artist-modal">
+<div class="modal-box">
+<button class="close-btn" id="close-modal">×</button>
+<img id="modal-image" src="" alt="Artist">
+<div class="modal-content">
+<h2 id="modal-name"></h2>
+<p id="modal-age"></p>
+<p id="modal-specialist"></p>
+<p id="modal-city"></p>
+<p id="modal-email"></p>
+<p id="modal-bio"></p>
+</div>
+</div>
+</div>
+<script>
+document.getElementById("logo-name").innerHTML="Palette.";
+document.getElementById("logo-sub").innerHTML="ARTISTS GALLERY";
+document.getElementById("nav-home").innerHTML="Home";
+document.getElementById("nav-about").innerHTML="About";
+document.getElementById("nav-artists").innerHTML="Artists";
+document.getElementById("nav-contact").innerHTML="Contact";
+document.getElementById("header-explore").innerHTML="Explore Artists →";
+document.getElementById("hero-small").innerHTML="CREATIVE MINDS · TIMELESS STORIES";
+document.getElementById("hero-title").innerHTML="Artists<br>Shape Our <span>World</span>";
+document.getElementById("hero-desc").innerHTML="Discover the lives, artworks, and stories of 16 influential artists from different eras, styles, and cultures. Explore how creativity connects people across time.";
+document.getElementById("hero-btn").innerHTML="Explore Artists →";
+document.getElementById("hero-number").innerHTML="16+";
+document.getElementById("hero-count").innerHTML="Remarkable Artists";
+document.getElementById("styles-title").innerHTML="Explore<br>by Style";
+document.getElementById("artists-title").innerHTML="Our Artists";
+document.getElementById("about-label").innerHTML="ABOUT US";
+document.getElementById("about-title").innerHTML="Celebrating <span>Creative</span> Minds";
+document.getElementById("about-desc").innerHTML="Palette is a platform dedicated to showcasing the stories, artworks, and journeys of extraordinary artists from around the world. We believe that art connects cultures, inspires people, and makes the world a more creative and open place.";
+document.getElementById("about-btn").innerHTML="Explore Artists →";
+document.getElementById("footer-logo").innerHTML="Palette.";
+document.getElementById("footer-sub").innerHTML="ARTISTS GALLERY";
+document.getElementById("footer-desc").innerHTML="Art lives through people, stories, and endless creativity.";
+document.getElementById("footer-links-title").innerHTML="Quick Links";
+document.getElementById("footer-home").innerHTML="Home";
+document.getElementById("footer-about").innerHTML="About";
+document.getElementById("footer-artists").innerHTML="Artists";
+document.getElementById("footer-contact").innerHTML="Contact";
+document.getElementById("footer-contact-title").innerHTML="Contact Us";
+document.getElementById("footer-email").innerHTML="info@palette.com";
+document.getElementById("footer-phone").innerHTML="+20 123 456 789";
+document.getElementById("footer-city").innerHTML="Cairo, Egypt";
+document.getElementById("newsletter-title").innerHTML="Newsletter";
+document.getElementById("newsletter-desc").innerHTML="Join our creative community.";
+document.getElementById("newsletter-btn").innerHTML="→";
+let styles=["Painting","Sculpture","Photography","Modern Art","Surrealism","Contemporary Art"];
+for(let i=0;i<styles.length;i++){
+document.getElementById("style-list").innerHTML+='<div class="style-item">'+styles[i]+'</div>';
+}
