@@ -341,3 +341,149 @@ color:#5b554e;
 color:#28231f;
 font-weight:700;
 }
+.artist-info .bio{
+margin-top:6px;
+margin-bottom:9px;
+line-height:1.45;
+flex:1;
+}
+.details-btn{
+background:#b54e39;
+color:white;
+border:none;
+border-radius:20px;
+padding:8px 16px;
+font-size:10px;
+font-weight:600;
+align-self:flex-start;
+transition:0.3s;
+}
+.details-btn:hover{
+background:#19352d;
+}
+.about{
+min-height:345px;
+background:#eee7de;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:60px;
+padding:25px 8%;
+overflow:hidden;
+}
+.about>img{
+width:43%;
+height:300px;
+object-fit:contain;
+}
+.about-text{
+width:47%;
+}
+.about-text .small-title{
+margin-bottom:10px;
+}
+.about-text h2{
+font-family:'Playfair Display',Georgia,serif;
+font-size:46px;
+line-height:1.12;
+margin-bottom:15px;
+letter-spacing:-1px;
+}
+.about-text h2 span{
+color:#b54e39;
+}
+.about-text>p:not(.small-title){
+font-size:14px;
+color:#56524e;
+line-height:1.7;
+max-width:530px;
+margin-bottom:20px;
+}
+.footer{
+background:#142b24;
+color:#f5f0e9;
+display:grid;
+grid-template-columns:1.3fr 0.7fr 1fr 1fr;
+gap:35px;
+padding:38px 5% 45px;
+}
+.footer h3{
+font-size:14px;
+font-weight:700;
+margin-bottom:16px;
+}
+.footer-brand h2{
+font-family:'Playfair Display',Georgia,serif;
+font-size:36px;
+line-height:1;
+}
+.footer-brand>p:nth-child(2){
+font-size:9px;
+letter-spacing:3px;
+margin:5px 0 18px;
+}
+.footer-brand>p:last-child{
+font-size:13px;
+line-height:1.6;
+color:#d6ded8;
+max-width:210px;
+}
+.footer-links ul{
+display:flex;
+flex-direction:column;
+gap:9px;
+}
+.footer-links a{
+font-size:12px;
+color:#d6ded8;
+}
+.footer-links a:hover{
+color:#e8a28f;
+}
+.footer-contact p{
+font-size:12px;
+color:#d6ded8;
+margin-bottom:12px;
+line-height:1.5;
+}
+.footer-newsletter>p{
+font-size:12px;
+color:#d6ded8;
+margin-bottom:14px;
+}
+.newsletter-form{
+display:flex;
+height:42px;
+max-width:260px;
+border:1px solid #73837b;
+border-radius:7px;
+overflow:hidden;
+}
+.newsletter-form input{
+width:100%;
+min-width:0;
+padding:0 12px;
+background:transparent;
+color:white;
+border:none;
+outline:none;
+font-size:11px;
+}
+.newsletter-form input::placeholder{
+color:#c7d0c9;
+}
+.newsletter-form button{
+width:48px;
+flex-shrink:0;
+border:none;
+background:#b54e39;
+color:white;
+font-size:19px;
+}
+.newsletter-form button:hover{
+background:#91402e;
+}
+#newsletter-message{
+margin-top:10px;
+font-size:12px;
+}
